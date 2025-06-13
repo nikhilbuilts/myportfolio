@@ -11,6 +11,8 @@
 
 body{
     background-color: #151515;
+    font-family: "Roboto", sans-serif;
+
 }
 
 .navbar{
@@ -51,6 +53,7 @@ body{
 }
 
 .icons li:hover{
+    transition: 0.5s;
     background-color: #2B7FFF;
 }
 
@@ -183,13 +186,13 @@ body{
 
 .titles h1{
     font-size: 72px;
-    font-family: "Roboto", sans-serif;
-
 }
 
 .titles p{
     font-weight: 300;
     font-family: "Geist", sans-serif;
+    font-weight: 300;
+
 
 }
 
@@ -212,12 +215,112 @@ body{
     color: white;
 }
 
-.bio h1{
-    font-family: "Roboto", sans-serif;
+.bio p{
+    font-family: "Geist", sans-serif;
+    font-weight: 300;
+
 
 }
 
-.bio p{
-    font-family: "Geist", sans-serif;
+.skill_section{
+    margin-top: 20px;
 
+    color: white;
+
+
+
+}
+
+
+.skills_logo{
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    gap: 40px;
+}
+
+.lan_logo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.skills_logo p{
+    margin-top: 5px;
+    font-family: "Geist", sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+
+}
+
+
+.lan_logo img{
+
+    height: 55px;
+    width: 55px;
+}
+
+.project{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 40px;
+    margin-bottom: 50px;
+}
+
+.title{
+    margin-top: 20px;
+    font-size: 30px;
+    color: white;
+    text-align: center;
+}
+
+.project1{
+    background-color: #2B2B2B;
+    color: white;
+    height: 450px;
+    width: 350px;
+    padding: 30px;
+    border-radius: 8px;
+
+
+}
+
+.project_img img{
+    /* margin-top: 10px; */
+    background-color: blue;
+    height: 295px;
+    width: 100%;
+    background-size: cover;
+    border-radius: 10px;
+}
+
+.project1 h3{
+    margin-top: 10px;
+    font-weight: 400;
+    width: 90%;
+    text-align:left;
+}
+
+.view_buttons{
+    width: 90%;
+    margin-top: 20px;
+    display: flex;
+    gap: 30px;
+}
+
+.view_btn{
+    font-size: 14px;
+    color: white;
+    height: 37px;
+    width: 84px;
+    border-radius: 8px;
+    border: none;
+    background-color: #2B7FFF;
+    font-family: "Geist", sans-serif;
+    text-align: center;
+    /* font-family: "Jersey 25", sans-serif; */
+    cursor: pointer;
 }
