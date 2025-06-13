@@ -1,0 +1,220 @@
+@import url('https://fonts.googleapis.com/css2?family=Ancizar+Serif:ital,wght@0,300..900;1,300..900&family=Geist+Mono:wght@100..900&family=Geist:wght@100..900&family=Lalezar&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lakki+Reddy&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jersey+25&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #151515;
+}
+
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav_box{
+
+    margin-top: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #2B2B2B;
+    width: 300px;
+    border-radius: 13px;
+    height: 50px;
+}
+
+.icons{
+    gap: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icons li{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    cursor: pointer;
+    border-radius: 8px;
+}
+
+.icons li:hover{
+    background-color: #2B7FFF;
+}
+
+.icons li svg{
+    padding: 1px;
+
+}
+
+
+.home_container{
+    padding-left: 100px;
+    padding-right: 100px;
+    margin-top: 40px;
+    display: flex;
+    /* align-items: center; */
+
+}
+
+
+.card{
+    height: 550px;
+    min-width: 350px;
+    background-color: #2B2B2B;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    border-radius: 13px;
+}
+
+.card h1{
+    color: white;
+    font-size: 55px;
+    font-weight: 50;
+    font-family: "Lalezar", sans-serif;
+}
+
+.card h3{
+    margin-top: -20px;
+    color: white;
+    letter-spacing: 2px;
+    font-size: 15px;
+    font-weight: 500;
+    /* font-family: "Lakki Reddy", serif; */
+    font-family: "Geist", sans-serif;
+    font-weight: 300;
+}
+
+
+.pic {
+    background-image: url(images/iris.jpg);
+    background-size: cover;
+    margin-top: 30px;
+    background-color: red;
+    height: 300px;
+    width: 70%;
+    border-radius: 13px;
+}
+
+.pic img{
+    margin-top: 40px;
+    height: 280px;
+}
+
+
+
+.social_logo li{
+    margin-top: 8px;
+    height: 40px;
+    list-style: none;
+    gap: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.social_logo li a{
+    color: white;
+}
+
+
+
+.card_social_logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 35px;
+    width: 35px;
+    font-size: 23px;
+    cursor: pointer;
+    border-radius: 4px;
+    
+}
+
+.social_logo li a{
+    text-decoration: none;
+}
+
+.card_social_logo:hover{
+    background-color: #2B7FFF;
+    transition: 0.8s;
+
+}
+
+
+.talk_btn{
+    margin-top: 8px;
+    font-size: 16px;
+    color: white;
+    margin-top: 10px;
+    height: 37px;
+    width: 84px;
+    border-radius: 10px;
+    border: none;
+    background-color: #2B7FFF;
+    font-family: "Jersey 25", sans-serif;
+    cursor: pointer;
+}
+
+.hero_text_container{
+    padding-left: 80px;
+
+}
+
+.titles{
+    color: white;
+    
+}
+
+.titles h1{
+    font-size: 72px;
+    font-family: "Roboto", sans-serif;
+
+}
+
+.titles p{
+    font-weight: 300;
+    font-family: "Geist", sans-serif;
+
+}
+
+.inline-heading {
+    display: inline;
+    margin-right: 8px;
+}
+
+.blue_col_text{
+    color: #2B7FFF;
+    
+}
+
+
+.about_section{
+    margin-top: 20px;
+}
+
+.bio{
+    color: white;
+}
+
+.bio h1{
+    font-family: "Roboto", sans-serif;
+
+}
+
+.bio p{
+    font-family: "Geist", sans-serif;
+
+}
