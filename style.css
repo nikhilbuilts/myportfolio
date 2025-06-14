@@ -516,6 +516,9 @@ body{
 }
 
 .academic_details{
+    background-color: red;
+    height: 200px;
+    width: 900px;
     display: flex;
     flex-direction: column;
     gap: 5px;
@@ -550,7 +553,7 @@ body{
 }
 
 .subject{
-    gap: 40px;
+    gap: 10px;
     display: flex;
     list-style: none;
 }
@@ -686,7 +689,9 @@ footer p{
 
   }
   .subject{
-    flex-direction: column;
+    font-size: 12px;
+    min-width: 80px;
+    flex-direction: row;
     gap: 1px;
     margin-top: 0px;
   }
@@ -698,5 +703,15 @@ footer p{
   }
   .hero_text{
     justify-content: center;
+  }
+
+  .education{
+    flex-direction: row;
+  }
+
+  .academic_details{
+    width: 340px;
+    min-height: 380px;
+    flex-direction: column;
   }
 }
