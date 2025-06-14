@@ -186,6 +186,7 @@ body{
 
 .titles h1{
     font-size: 72px;
+    min-width: 650px;
 }
 
 .titles p{
@@ -199,6 +200,7 @@ body{
 .inline-heading {
     display: inline;
     margin-right: 8px;
+
 }
 
 .blue_col_text{
@@ -630,6 +632,8 @@ footer p{
   }
   .project{
     flex-direction: column;
+    align-items: center;
+
   }
   .status{
     margin-left: 300px;
