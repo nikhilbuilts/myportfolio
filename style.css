@@ -622,3 +622,16 @@ footer p{
     text-decoration: none;
     color: inherit;
 }
+
+
+@media (max-width: 768px) {
+  .home_container {
+    flex-direction: column;
+  }
+  .project{
+    flex-direction: column;
+  }
+  .status{
+    margin-left: 300px;
+  }
+}
