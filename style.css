@@ -180,6 +180,15 @@ body{
 
 }
 
+.hero_text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 600px;
+    width: 620px;
+    /* background-color: red; */
+}
+
 .titles{
     color: white;
     
@@ -284,21 +293,27 @@ body{
 .project1{
     background-color: #2B2B2B;
     color: white;
-    height: 450px;
-    width: 350px;
-    padding: 30px;
-    border-radius: 8px;
+    height: 320px;
+    width: 360px;
+    padding: 20px;
+    border-radius: 4px;
+    box-shadow: 3px 5px 5px rgba(1, 1, 1, 0.2);
+    transition: 0.2s ease-in-out;
+}
 
-
+.project1:hover{
+    transform: scale(1.04);
+    box-shadow: 3px 5px 5px rgba(1, 1, 1, 0.3);
+    transition: 0.2s ease-in-out;
 }
 
 .project_img img{
     /* margin-top: 10px; */
     background-color: blue;
-    height: 295px;
-    width: 100%;
+    height: 180px;
+    width: 320px;
     background-size: cover;
-    border-radius: 10px;
+    border-radius: 4px;
 }
 
 .project1 h3{
@@ -328,14 +343,26 @@ body{
     cursor: pointer;
 }
 
+.experience{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
 
 .f_inter{
+    /* background-color: aqua; */
+    width: 700px;
     color: white;
     display: flex;
     justify-content: center;
 }
 
 .status{
+    /* background-color: blue; */
+    width: 220px;
+    min-height: 80px;
     display: flex;
     flex-direction: column;
     gap: 10px;
@@ -346,7 +373,7 @@ body{
     font-size: 13px;
     text-align: center;
     background-color: #0c0c0c;
-    width: 170px;
+    width: 200px;
     height: 26px;
     line-height: 26px;
     border-radius: 10px;
@@ -373,26 +400,6 @@ body{
     flex-direction: column;
     align-items: center;
 }
-
-.shape2{
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    margin-left: -4px;
-
-}
-
-.shape3{
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    margin-left: 6px;
-    
-}
-
-
 
 
 .point{
@@ -437,16 +444,21 @@ body{
 
 
 .inter_about{
-    font-family: "Geist", sans-serif;
-    font-weight: 200;
     margin-left: 20px;
+    /* background-color: red; */
+    min-height: 80px;
+    width: 700px;   
+    font-weight: 200;
+    font-family: "Geist", sans-serif;
 }
 
-.intern_skills , .intern_skills2{
-    gap: 10px;
+.intern_skills{
+    /* background-color: yellow; */
+    gap: 5px;
     margin-top: 10px;
     display: flex;
     align-items: center;
+    /* justify-content: center; */
 
 }
 
@@ -455,7 +467,7 @@ body{
     font-size: 13px;
     text-align: center;
     background-color: #0c0c0c;
-    min-width: 120px;
+    width: 100px;
     height: 26px;
     font-weight: 400;
     line-height: 26px;
@@ -464,18 +476,6 @@ body{
     cursor: pointer;
 }
 
-.intern_skills2 p{
-    font-size: 13px;
-    text-align: center;
-    background-color: #0c0c0c;
-    min-width: 120px;
-    height: 26px;
-    font-weight: 400;
-    line-height: 26px;
-    border-radius: 8px;
-    border: solid 0.2px rgb(57, 57, 57);
-    cursor: pointer;
-}
 
 
 .education_container{
@@ -489,10 +489,19 @@ body{
 .education{
     background-color: #2B2B2B;
     padding: 20px;
-    height: 250px;
+    min-height: 250px;
     width: 80%;
     margin-bottom: 30px;
     display: flex;
+    box-shadow: 3px 5px 5px rgba(1, 1, 1, 0.2);
+    transition: 0.2s ease-in-out;
+    cursor: pointer;
+}
+
+.education:hover{
+    transform: scale(1.04);
+    box-shadow: 3px 5px 5px rgba(1, 1, 1, 0.3);
+    transition: 0.2s ease-in-out;
 }
 
 .academic_photo{
@@ -512,10 +521,6 @@ body{
     gap: 5px;
     color: white;
     margin-left: 20px;
-}
-
-.session{
-    font-size: 15px;
 }
 
 
@@ -550,10 +555,9 @@ body{
     list-style: none;
 }
 .branch_session {
-  display: flex;
-  justify-content: space-cente;
-  align-items: center;
-  /* flex-wrap: wrap; */
+    display: flex;
+    align-items: center;
+    
 }
 
 .branch_session p{
@@ -627,19 +631,7 @@ footer p{
 }
 
 
-@media (max-width: 768px) {
-  .home_container {
-    flex-direction: column;
-  }
-  .project{
-    flex-direction: column;
-    align-items: center;
 
-  }
-  .status{
-    margin-left: 300px;
-  }
-}
 
 .socials-container a{
   padding: 1em;
@@ -680,4 +672,31 @@ footer p{
 .socials-container a:hover::before{
   transform: translateY(40px) rotate(0);
   opacity: 1;
+}
+
+@media (max-width: 768px) {
+  .home_container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .project{
+    flex-direction: column;
+    align-items: center;
+
+  }
+  .subject{
+    flex-direction: column;
+    gap: 1px;
+    margin-top: 0px;
+  }
+  .branch_session{
+    display: block;
+  }
+  .session{
+    margin-top: 5px;
+  }
+  .hero_text{
+    justify-content: center;
+  }
 }
