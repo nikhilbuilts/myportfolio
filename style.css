@@ -22,7 +22,6 @@ body{
 }
 
 .nav_box{
-
     margin-top: 25px;
     display: flex;
     justify-content: center;
@@ -445,9 +444,8 @@ body{
 
 .inter_about{
     margin-left: 20px;
-    /* background-color: red; */
-    min-height: 80px;
-    width: 700px;   
+    min-height: 90px;
+    min-width: 50px;   
     font-weight: 200;
     font-family: "Geist", sans-serif;
 }
@@ -458,6 +456,7 @@ body{
     margin-top: 10px;
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
     /* justify-content: center; */
 
 }
@@ -718,6 +717,23 @@ footer p{
 }
 
 @media (max-width: 768px) {
+    .home_containers{
+        justify-content: center;
+        align-items: center;
+    }
+    .titles h1{
+        font-size: 40px;
+    }
+
+    .skills_logo img{
+        width: 40px;
+        height: 40px;
+
+    }
+    .hero_text{
+        background-color: red;
+        width: 500px;
+    }
   .home_container {
     flex-direction: column;
     justify-content: center;
@@ -757,8 +773,22 @@ footer p{
 }
 
 @media (max-width: 600px) {
-    .hero_text {
-    text-align: center;
+    .home_containers{
+        justify-content: center;
+        align-items: center;
+    }
+    .titles h1{
+        font-size: 40px;
+    }
+
+    .skills_logo img{
+        width: 40px;
+        height: 40px;
+
+    }
+    .hero_text{
+        background-color: red;
+        width: 500px;
     }
   .home_container {
     flex-direction: column;
@@ -788,15 +818,24 @@ footer p{
   }
 
   .education{
-    width: 600px;
+    width: 500px;
+    min-height: 620px;
     flex-direction: row;
     justify-content: center;
-    align-items: center;
   }
 
   .academic_details{
     width: 350px;
     min-height: 420px;
     flex-direction: column;
+  }
+
+  .inter_about{
+    width: 230px;
+    height: 400px;
+  }
+
+  .line{
+    height: 400px;
   }
 }
