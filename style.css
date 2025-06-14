@@ -645,8 +645,6 @@ footer p{
   padding: 1em;
   height: 64px;
   width: 64px;
-  box-sizing: border-box;
-  flex-shrink: 0;
   display: grid;
   place-items: center;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.05);
@@ -660,7 +658,7 @@ footer p{
   background-color: var(--accent-color);
   color: white;
   text-decoration: none;
-  padding: 0.5em 1em;
+  padding: 0.5em 1em;    
   border-radius: 100px;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.05);
   transform: translateY(-30px);
